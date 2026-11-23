@@ -174,5 +174,15 @@
   "theme": {
     "palette": "prugna",
     "fonts": "editoriale"
-  }
+  },
+  "custom": [
+    {
+      "name": "AutoreEditoriale",
+      "title": "Stile editoriale degli autori",
+      "description": "Nomi degli autori in corsivo con colore primario e sfondo delicato del tema.",
+      "role": "cell",
+      "pageId": "catalogo-libri",
+      "column": "Autore"
+    }
+  ]
 }
