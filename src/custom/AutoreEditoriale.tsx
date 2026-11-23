@@ -5,9 +5,11 @@ const { setTimeout, setInterval, clearTimeout, clearInterval } = customTimers("A
 import { type CellProps } from "../floware";
 
 export default function AutoreEditoriale({ value }: CellProps) {__mk();
+  const parti = value.trim().split(" ").filter((parte) => (__mk(), parte !== ""));
+  const autore = parti.map((parte, indice) => (__mk(), indice === parti.length - 1 ? parte.toLocaleUpperCase("it-IT") : parte)).join(" ");
   return (
-    <span className="inline-block max-w-full rounded px-2 py-1 font-serif text-sm font-medium italic leading-relaxed bg-(--mk-subtle) text-(--mk-text) border-l-2 border-(--mk-border)" style={{ color: "var(--mk-primary)" }}>
-      {value}
-    </span>
+    <strong className="font-serif text-sm font-bold not-italic leading-relaxed text-(--mk-text)">
+      {autore || value}
+    </strong>
   );
 }

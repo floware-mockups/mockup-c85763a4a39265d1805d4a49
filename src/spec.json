@@ -172,14 +172,14 @@
     }
   ],
   "theme": {
-    "palette": "prugna",
+    "palette": "delta-sabbia",
     "fonts": "editoriale"
   },
   "custom": [
     {
       "name": "AutoreEditoriale",
       "title": "Stile editoriale degli autori",
-      "description": "Nomi degli autori in corsivo con colore primario e sfondo delicato del tema.",
+      "description": "Nome e cognome in grassetto, con il solo cognome in maiuscolo, senza corsivo né sfondo.",
       "role": "cell",
       "pageId": "catalogo-libri",
       "column": "Autore"
