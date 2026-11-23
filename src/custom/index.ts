@@ -5,7 +5,7 @@
 // errore resta nel suo ErrorBoundary e non ferma il resto del prototipo.
 import { lazy, type ComponentType } from "react";
 import { guardCustomModule } from "../customGuard.ts";
-const loaders = { AutoreEditoriale: () => import("./AutoreEditoriale") };
+const loaders = { AutoreEditoriale: () => import("./AutoreEditoriale"), TitoloLibro: () => import("./TitoloLibro"), DescrizioneLibro: () => import("./DescrizioneLibro"), SchedaLibro: () => import("./SchedaLibro") };
 export const customComponents: Record<string, ComponentType<never>> = Object.fromEntries(Object.entries(loaders).map(([name, load]) => [name, lazy(() => guardCustomModule(name, load))]));
 // Caricati subito dopo l'avvio, così il primo clic è immediato; un errore resta al componente.
 export const preloadCustomComponents = () => { for (const [name, load] of Object.entries(loaders)) guardCustomModule(name, load).catch(() => undefined); };

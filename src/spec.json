@@ -141,7 +141,9 @@
           "07/05/2025"
         ]
       ],
-      "form": []
+      "form": [],
+      "statusColumn": 6,
+      "view": "cards"
     },
     {
       "id": "nuovo-ingresso",
@@ -173,7 +175,7 @@
   ],
   "theme": {
     "palette": "delta-sabbia",
-    "fonts": "editoriale"
+    "fonts": "alta-leggibilita"
   },
   "custom": [
     {
@@ -183,6 +185,29 @@
       "role": "cell",
       "pageId": "catalogo-libri",
       "column": "Autore"
+    },
+    {
+      "name": "TitoloLibro",
+      "title": "Titolo evidenziato",
+      "description": "Titolo in evidenza con il colore primario del tema.",
+      "role": "cell",
+      "pageId": "catalogo-libri",
+      "column": "Titolo"
+    },
+    {
+      "name": "DescrizioneLibro",
+      "title": "Descrizione in corsivo",
+      "description": "Descrizione del libro in corsivo nelle card del catalogo.",
+      "role": "cell",
+      "pageId": "catalogo-libri",
+      "column": "Descrizione"
+    },
+    {
+      "name": "SchedaLibro",
+      "title": "Scheda del libro",
+      "description": "Dettaglio con titolo evidenziato e descrizione in corsivo in fondo.",
+      "role": "detail",
+      "pageId": "catalogo-libri"
     }
   ]
 }
