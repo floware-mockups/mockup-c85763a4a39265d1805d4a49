@@ -1,0 +1,178 @@
+{
+  "title": "Catalogazione dei libri in ingresso",
+  "description": "Prototipo per registrare, descrivere e consultare i libri acquisiti, con vista di sintesi e catalogo filtrabile per autore e titolo.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle acquisizioni e accesso rapido al catalogo.",
+      "metrics": [
+        {
+          "label": "Libri catalogati",
+          "value": "128"
+        },
+        {
+          "label": "In catalogazione",
+          "value": "7"
+        },
+        {
+          "label": "Autori registrati",
+          "value": "94"
+        },
+        {
+          "label": "Acquisizioni recenti",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Titolo",
+        "Autore",
+        "Stato",
+        "Ingresso"
+      ],
+      "rows": [
+        [
+          "La lanterna di Nubi",
+          "Lumo Ardesi",
+          "Catalogato",
+          "12/05/2025"
+        ],
+        [
+          "Atlante delle maree quiete",
+          "Vela Nivori",
+          "In catalogazione",
+          "11/05/2025"
+        ],
+        [
+          "Il giardino di rame",
+          "Nubi Selvari",
+          "Catalogato",
+          "10/05/2025"
+        ],
+        [
+          "Mappe per un cielo lento",
+          "Lumo Tersali",
+          "Catalogato",
+          "09/05/2025"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "catalogo-libri",
+      "title": "Catalogo libri",
+      "description": "Elenco consultabile con ricerca per titolo o autore e filtri per stato e genere.",
+      "metrics": [
+        {
+          "label": "Risultati nel catalogo",
+          "value": "128"
+        }
+      ],
+      "columns": [
+        "Titolo",
+        "Autore",
+        "Descrizione",
+        "Genere",
+        "Editore",
+        "Anno",
+        "Stato",
+        "Ingresso"
+      ],
+      "rows": [
+        [
+          "La lanterna di Nubi",
+          "Lumo Ardesi",
+          "Una viandante raccoglie storie luminose lungo sentieri di montagna.",
+          "Narrativa",
+          "Edizioni Velaquieta",
+          "2024",
+          "Catalogato",
+          "12/05/2025"
+        ],
+        [
+          "Atlante delle maree quiete",
+          "Vela Nivori",
+          "Mappe immaginarie seguono il ritmo di coste remote.",
+          "Saggistica",
+          "Casa Nubiluna",
+          "2023",
+          "In catalogazione",
+          "11/05/2025"
+        ],
+        [
+          "Il giardino di rame",
+          "Nubi Selvari",
+          "Un giardino mutevole custodisce segreti botanici e familiari.",
+          "Narrativa",
+          "Edizioni Lumealto",
+          "2022",
+          "Catalogato",
+          "10/05/2025"
+        ],
+        [
+          "Mappe per un cielo lento",
+          "Lumo Tersali",
+          "Appunti illustrati per osservare nuvole e paesaggi.",
+          "Arte",
+          "Casa Velaquieta",
+          "2025",
+          "Catalogato",
+          "09/05/2025"
+        ],
+        [
+          "Le stanze del vento",
+          "Vela Ormali",
+          "Racconti di case sospese tra memoria e invenzione.",
+          "Racconti",
+          "Edizioni Nubiluna",
+          "2021",
+          "Catalogato",
+          "08/05/2025"
+        ],
+        [
+          "Erbario delle lune chiare",
+          "Nubi Vardeni",
+          "Un repertorio fantastico di piante notturne.",
+          "Natura",
+          "Casa Lumealto",
+          "2024",
+          "In catalogazione",
+          "07/05/2025"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuovo-ingresso",
+      "title": "Registra ingresso",
+      "description": "Inserisci i dati essenziali del libro ricevuto per avviare la catalogazione.",
+      "metrics": [],
+      "columns": [
+        "Titolo",
+        "Autore",
+        "Descrizione",
+        "Genere",
+        "Editore",
+        "Anno",
+        "Stato",
+        "Ingresso"
+      ],
+      "rows": [],
+      "form": [
+        "Titolo",
+        "Autore",
+        "Descrizione",
+        "Genere",
+        "Editore",
+        "Anno",
+        "Stato",
+        "Ingresso"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "prugna",
+    "fonts": "editoriale"
+  }
+}
