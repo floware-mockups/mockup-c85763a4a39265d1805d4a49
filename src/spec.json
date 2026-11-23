@@ -77,7 +77,7 @@
         "Editore",
         "Anno",
         "Stato",
-        "Ingresso"
+        "Ingresso / Collocazione"
       ],
       "rows": [
         [
@@ -195,19 +195,21 @@
       "column": "Titolo"
     },
     {
-      "name": "DescrizioneLibro",
-      "title": "Descrizione in corsivo",
-      "description": "Descrizione del libro in corsivo nelle card del catalogo.",
-      "role": "cell",
-      "pageId": "catalogo-libri",
-      "column": "Descrizione"
-    },
-    {
       "name": "SchedaLibro",
       "title": "Scheda del libro",
       "description": "Dettaglio con titolo evidenziato e descrizione in corsivo in fondo.",
       "role": "detail",
       "pageId": "catalogo-libri"
+    },
+    {
+      "name": "ConfermaCollocazione",
+      "title": "Collocazione del libro",
+      "description": "Scelta della collocazione prima della registrazione nel catalogo, conservando la data di ingresso.",
+      "role": "confirm",
+      "pageId": "nuovo-ingresso",
+      "events": [
+        "add"
+      ]
     }
   ]
 }
