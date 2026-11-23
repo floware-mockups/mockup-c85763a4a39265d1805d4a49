@@ -195,13 +195,6 @@
       "column": "Titolo"
     },
     {
-      "name": "SchedaLibro",
-      "title": "Scheda del libro",
-      "description": "Dettaglio con titolo evidenziato e descrizione in corsivo in fondo.",
-      "role": "detail",
-      "pageId": "catalogo-libri"
-    },
-    {
       "name": "ConfermaCollocazione",
       "title": "Collocazione del libro",
       "description": "Scelta della collocazione prima della registrazione nel catalogo, conservando la data di ingresso.",
@@ -210,6 +203,14 @@
       "events": [
         "add"
       ]
+    },
+    {
+      "name": "CollocazioneLibro",
+      "title": "Formato della collocazione",
+      "description": "Evidenzia soltanto la collocazione, mantenendo invariata la data di ingresso.",
+      "role": "cell",
+      "pageId": "catalogo-libri",
+      "column": "Ingresso / Collocazione"
     }
   ]
 }
